@@ -1,0 +1,22 @@
+{
+  "name": "audit-roulette",
+  "version": "0.0.0",
+  "description": "Pick an auditor for a commit!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ariabuckles/audit-roulette.git"
+  },
+  "author": "Aria Buckles",
+  "license": "CC0 1.0 universal",
+  "bugs": {
+    "url": "https://github.com/ariabuckles/audit-roulette/issues"
+  },
+  "homepage": "https://github.com/ariabuckles/audit-roulette",
+  "devDependencies": {
+    "aletheia": "0.0.4"
+  }
+}
