@@ -33,8 +33,11 @@ var auditors = _if((args.length !== 0), args, _else, (function(_it) {
 var lines = fs.readFileSync("auditors.txt", {
 encoding: "utf8"
 });
-return lines.split(/[\n\r]+/);
+return lines.split(/[\n\r]+/).filter((function(a) {
+return a;
+}));
 }));
 console.log("picking from: ", auditors.join(" "));
 var index = Math.floor((Math.random() * auditors.length));
+console.log(index, auditors);
 console.log(auditors[index]);
