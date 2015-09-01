@@ -29,7 +29,9 @@ var exe_index = process.argv.map((function(arg) {
 return this_program_regex.test(arg);
 })).indexOf(true);
 var args = process.argv.slice((exe_index + 1));
-var auditors = _if((args.length !== 0), args, _else, (function(_it) {
+var auditors = _if((args.length !== 0), (function(_it) {
+return args;
+}), _else, (function(_it) {
 var lines = fs.readFileSync("auditors.txt", {
 encoding: "utf8"
 });

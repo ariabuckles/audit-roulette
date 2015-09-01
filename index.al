@@ -12,7 +12,7 @@ exe_index = (process.argv.map [ arg |
 
 args = process.argv.slice (exe_index + 1)
 
-auditors = if (args.length != 0) args else [
+auditors = if (args.length != 0) [ args ] else [
     lines = fs.readFileSync "auditors.txt" {encoding: 'utf8'}
     ret (lines.split /[\n\r]+/).filter [ a | a ]
 ]
